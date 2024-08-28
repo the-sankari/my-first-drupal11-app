@@ -1,0 +1,7 @@
+first_module.page:
+  path: "/games"
+  defaults:
+    _controller: '\Drupal\games\Controller\GamesController::games'
+    _title: "Games module"
+  requirements:
+    _permission: "access content"

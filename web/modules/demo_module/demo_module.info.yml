@@ -1,0 +1,4 @@
+name: Demo module
+description: My Demo Drupal 10 module
+type: module
+core_version_requirement: ^10 || ^11 || ^12
