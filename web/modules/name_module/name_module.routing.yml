@@ -1,5 +1,5 @@
 name_module.page:
-  path: "/names"
+  path: "/name"
   defaults:
     _controller: 'Drupal\name_module\Controller\NameFormController::content'
     _title: "Name form module"
@@ -7,9 +7,30 @@ name_module.page:
     _permission: "access content"
 
 name_module.form:
-  path: "/name"
+  path: "/form"
   defaults:
     _form: '\Drupal\name_module\Form\NameForm'
     _title: "Name form module"
   requirements:
     _permission: "access content"
+
+greeting.page:
+  path: "/name_greeting/{name}"
+  defaults:
+    _controller: 'Drupal\name_module\Controller\NameFormController::greeting'
+    _title: "Greeting "
+  requirements:
+    _permission: "access content"
+
+
+# name.greeting:
+#   path: "/name_greeting/{name}"
+#   defaults:
+#     _controller: 'Drupal\name_module\Controller\NameFormController::greeting'
+#     _title: "Greeting Page"
+#   requirements:
+#     _permission: "access content"
+#   options:
+#     parameters:
+#       name:
+#         type: string
