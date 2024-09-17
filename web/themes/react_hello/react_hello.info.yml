@@ -1,0 +1,8 @@
+name: React Drupal Together
+description: "A community-driven project to bring together React and Drupal developers to build a better future for web developers"
+type: theme
+base theme: olivero
+core_version_requirement: ^9||^10||^11
+
+libraries:
+  - react_hello/react_app

@@ -5,3 +5,7 @@ config:
 services:
   appservice:
     type: phpmyadmin
+  appserver:
+    type: php:8.3
+    config:
+    php: ./php.ini

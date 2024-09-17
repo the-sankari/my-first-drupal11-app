@@ -20,7 +20,9 @@
         "drupal/core-project-message": "^11.0",
         "drupal/core-recommended": "^11.0",
         "drupal/devel": "^5.3",
+        "drupal/paragraphs": "^1.18",
         "drupal/ruhi": "^11.0",
+        "drupal/vani": "^11.0",
         "drupal/webprofiler": "^11.0",
         "drush/drush": "^13.0"
     },
