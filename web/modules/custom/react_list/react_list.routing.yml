@@ -1,4 +1,4 @@
-first_module.page:
+react_list_module.page:
   path: "/react_list"
   defaults:
     _controller: '\Drupal\react_list\Controller\ReactListController::content'
