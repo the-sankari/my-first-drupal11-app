@@ -1,0 +1,7 @@
+team_7_react_module.page:
+  path: "/team_7"
+  defaults:
+    _controller: '\Drupal\team_7\Controller\Team7Controller::content'
+    _title: "Team 7 React module"
+  requirements:
+    _permission: "access content"

@@ -1,0 +1,4 @@
+team_7:
+  version: VERSION
+  js:
+    js/dist/main.min.js: {}
