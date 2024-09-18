@@ -14,15 +14,12 @@ body {
   padding: 0;
 }
 
-h1,
-h2 {
-  color: var(--text-color);
-}
+
 
 
 
 /* Navbar Styles */
-nav {
+.App nav {
   background-color: var(--primary-color);
   padding: 1rem;
   text-align: center;
@@ -32,7 +29,7 @@ nav {
   z-index: 999;
 }
 
-nav ul {
+.App nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -40,44 +37,41 @@ nav ul {
   justify-content: center;
 }
 
-nav ul li {
+.App nav ul li {
   margin: 0 15px;
 }
 
-nav ul li a {
+.App nav ul li a {
   color: var(--text-color);
   text-decoration: none;
   font-weight: bold;
 }
 
-nav ul li a:hover {
+.App nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Content Styles */
-div {
-  padding: 20px;
-}
 
-h1 {
+
+.App h1 {
   font-size: 2.5rem;
   text-align: center;
   margin-top: 20px;
 }
 
-p {
+.App p {
   font-size: 1.2rem;
   line-height: 1.6;
   text-align: center;
 }
 
 /* Project List Styles */
-ul {
+.App ul {
   list-style-type: none;
   padding: 0;
 }
 
-ul li {
+.App ul li {
   color: var(--text-color);
   padding: 10px;
   margin: 10px auto;
@@ -86,13 +80,13 @@ ul li {
   border-radius: 5px;
 }
 
-ul li:hover {
+.App ul li:hover {
   background-color: var(--text-color);
   cursor: pointer;
 }
 
 /* Footer Styles */
-footer {
+.App footer {
   text-align: center;
   padding: 20px;
   background-color: var(--primary-color);
@@ -103,14 +97,14 @@ footer {
 }
 
 
-.hero{
+.App .hero{
   background-image: url("./assets/river.jpg");
   background-size: cover;
   position: relative;
   height: 500px;
   
 }
-.hero .hero-title{
+.App .hero .hero-title{
   background-color: var(--text-color-2);
   color: var(--text-color-dark);
   font-size: 10vw; 
@@ -126,17 +120,17 @@ footer {
   mix-blend-mode: screen;
 }
 
-.text .hero-text{
+.App .text .hero-text{
   color: var(--text-color);
 }
 
 /* Mobile Responsive */
 @media (max-width: 600px) {
-  nav ul {
+.App  nav ul {
     flex-direction: column;
   }
 
-  ul li {
+.App  ul li {
     width: 100%;
   }
 }
