@@ -1,0 +1,9 @@
+name: Team 7 React Module
+description: Team 7 React Module for group work
+type: module
+core_version_requirement: ^10 || ^11 || ^12
+dependencies:
+  - drupal:node
+
+libraries:
+  - team_7/team_7

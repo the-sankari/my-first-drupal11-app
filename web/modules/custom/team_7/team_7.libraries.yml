@@ -1,0 +1,8 @@
+team_7:
+  version: VERSION
+  js:
+    js/dist/main.min.js: {}
+  css:
+    css/dist/main.min.css: {}
+  dependencies:
+    - core/drupal
