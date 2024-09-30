@@ -1,0 +1,18 @@
+name: Card Theme 
+description: A Card theme for task purpose
+type: theme
+version: 1.0.0
+author: Kajol
+core_version_requirement: ^9 || ^10 || ^11
+base theme: false
+
+libraries:
+  - card_theme/global-styling
+regions:
+  header: 'Header'
+  highlighted: 'Highlighted'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  footer: 'Footer'
+  
+
