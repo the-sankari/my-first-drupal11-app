@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: maroon;
+}
+
+.dialog-off-canvas-main-canvas{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#block-card-theme-site-branding{
+    background-color: #f7f7f7;
+    img{
+        width: 10vw;
+        padding: 20px;
+    }
+}
+
+#block-card-theme-site-branding a:nth-child(1){
+   padding: 10px 20px;
+}
+
+#block-card-theme-site-branding a:nth-child(2){
+    display: none;
+}
