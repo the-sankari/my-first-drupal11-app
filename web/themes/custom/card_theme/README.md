@@ -34,7 +34,7 @@ Theme Appearance
 - Implement a responsive team section
 
 ## Author
-- [Kajol Sutra Dhr](https://github.com/the-sankari)
+- [Kajol Sutra Dhar](https://github.com/the-sankari)
 
 ## License
 - [MIT License](https://github.com/the-sankari/card-theme/blob/main/LICENSE)
