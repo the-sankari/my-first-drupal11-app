@@ -1,13 +1,27 @@
-*{
+:root {
+    --primary-color: #000;
+    --secondary-color: #FF7303;
+    --text-color: #FF7303;
+    --text-color-2: #ffffff;
+    --text-color-hover: #ff7403c5;
+    --text-color-light: #FFF5ED;
+    --text-color-dark: #2E2C2B;
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-  background-color: maroon;
-}
-
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+    background: var(--primary-color);
+    color: var(--text-color-light);
+  }
+  
 .dialog-off-canvas-main-canvas{
     margin: 0;
     padding: 0;
@@ -31,3 +45,194 @@ body {
 #block-card-theme-site-branding a:nth-child(2){
     display: none;
 }
+.layout-content{
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.views-row {
+    width: 100%;
+
+}
+
+.views-row article h2 a {
+    color: red;
+    font-size: 6vw;
+    text-decoration: none;
+
+}
+
+.views-row img{
+    width: 10vw;
+}
+
+#home {
+    position: relative;
+    background: url(./home-background.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .home-right {
+    height: 60%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .hero-letter {
+      font-size: 6vw;
+      color: var(--text-color);
+      opacity: 0.5;
+      font-weight: 900;
+      padding: 20px 0;
+    }
+  }
+  
+  .home-left {
+    flex: 1;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hero-text-container {
+    padding-bottom: 30px;
+    margin-left: 20px;
+  }
+  .hero-text-container-hr {
+    border: none;
+    border-top: 3px double var(--text-color);
+    color: var(--text-color);
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+  }
+  
+  hr::after {
+    background: var(--primary-color);
+    content: "</>";
+    padding: 0 6px;
+    position: relative;
+    top: -13px;
+  }
+  .hero-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-color-2);
+    padding: 10px;
+  }
+  
+  .hero-slogan {
+    font-size: 32px;
+  }
+  .hero-dev {
+    font-size: 18px;
+  }
+  
+  /* Home  left bottom */
+  
+  .home-buttons-container {
+    display: flex;
+    a {
+      color: var(--text-color);
+      text-decoration: none;
+  
+    }
+  }
+  
+  .button {
+    background-color: var(--text-color-dark);
+    padding: 10px 16px;
+    margin: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+  }
+  .button:hover {
+    background-color: var(--text-color);
+    color: var(--text-color-dark);
+    border: 1px solid var(--text-color-2);
+  }
+  
+  .digit {
+    position: absolute;
+    top: -50px;
+    font-size: 20px;
+    color: #ff74038f;
+    animation: fallingAnimation linear infinite;
+  }
+  
+  @keyframes fallingAnimation {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(100vh);
+    }
+  }
+  
+  
+  /* mobile version */
+  
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #home {
+      flex-direction: column-reverse;
+    }
+    .home-right{
+      flex-direction: row;
+      gap: 30px;
+      max-height: 40%;
+      .hero-letter{
+      font-size: 15vw;
+      }
+    }
+    .home-left{
+      justify-content: flex-start;
+    }
+    .hero-text {
+      font-size: 5vw;
+      font-weight: 500;
+      color: var(--text-color-2);
+      padding: 10px;
+    }
+    
+    .hero-slogan {
+      font-size: 6vw;
+    }
+    .hero-dev {
+      font-size: 5vw;
+    }
+  
+    .home-buttons-container {
+      display: flex;
+      flex-direction: column;
+      .button{
+        padding: 8px 12px;
+      }
+    }
+  }
+  
+  
+  @media only screen and (max-width: 400px) {
+    .home-right{
+      flex-direction: row;
+      gap: 30px;
+      max-height: 40%;
+      .hero-letter{
+      font-size: 15vw;
+      }
+    }
+  }
