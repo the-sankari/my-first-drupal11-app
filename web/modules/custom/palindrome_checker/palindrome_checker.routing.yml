@@ -1,0 +1,19 @@
+# For drupal module
+# palindrome_checker.page:
+#   path: '/check-palindrome'
+#   defaults:
+#     _controller: '\Drupal\palindrome_checker\Controller\PalindromeCheckerController::apicheck'
+#     _title: 'Palindrome Checker'
+#   requirements:
+#     _permission: 'access content'
+
+
+## Used in  react app, module api call
+palindrome_checker.api:
+  path: '/api/palindrome-check'
+  defaults:
+    _controller: '\Drupal\palindrome_checker\Controller\PalindromeCheckerController::apiCheck'
+    _format: 'json'
+  requirements:
+    _permission: 'access content'
+  methods: [POST]

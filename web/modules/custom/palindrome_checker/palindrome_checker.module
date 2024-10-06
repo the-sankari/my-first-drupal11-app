@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Implements hook_help().
+ * Provides help documentation for the Palindrome Checker module.
+ */
+function palindrome_checker_help(string $route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.palindrome_checker':
+      return '<p>' . t('The Palindrome Checker module allows users to input a string and check if it is a palindrome.') . '</p>';
+  }
+}
+
+/**
+ * Custom function to check if a string is a palindrome.
+ */
+function palindrome_checker_is_palindrome(string $input): bool {
+  // Remove all non-alphanumeric characters and convert to lowercase.
+  $cleaned_input = preg_replace('/[^a-zA-Z0-9]/', '', strtolower($input));
+
+  // Check if the cleaned string is the same forwards and backwards.
+  return $cleaned_input === strrev($cleaned_input);
+}
