@@ -214,23 +214,33 @@ parameters:
   # Read https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
   # for more information about the topic in general.
   # Note: By default the configuration is disabled.
+  # cors.config:
+  #   enabled: true
+  #   # Specify allowed headers, like 'x-allowed-header'.
+  #   allowedHeaders: ['x-csrf-token', 'authorization', 'content-type', 'Content-Type', 'Authorization']
+  #   # Specify allowed request methods, specify ['*'] to allow all possible ones.
+  #   allowedMethods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS']
+  #   # Configure requests allowed from specific origins. Do not include trailing
+  #   # slashes with URLs.
+  #   allowedOrigins: ['http://localhost:5173', 'https://my-first-drupal11-app.lndo.site']
+  #   # Configure requests allowed from origins, matching against regex patterns.
+  #   allowedOriginsPatterns: []
+  #   # Sets the Access-Control-Expose-Headers header.
+  #   exposedHeaders: true
+  #   # Sets the Access-Control-Max-Age header.
+  #   maxAge: 1000
+  #   # Sets the Access-Control-Allow-Credentials header.
+  #   supportsCredentials: false
+
   cors.config:
     enabled: true
-    # Specify allowed headers, like 'x-allowed-header'.
-    allowedHeaders: ['x-csrf-token', 'authorization', 'content-type']
-    # Specify allowed request methods, specify ['*'] to allow all possible ones.
+    allowedHeaders: ['x-csrf-token', 'authorization', 'content-type', 'Content-Type', 'Authorization']
     allowedMethods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS']
-    # Configure requests allowed from specific origins. Do not include trailing
-    # slashes with URLs.
-    allowedOrigins: ['http://localhost:5173']
-    # Configure requests allowed from origins, matching against regex patterns.
-    allowedOriginsPatterns: []
-    # Sets the Access-Control-Expose-Headers header.
-    exposedHeaders: false
-    # Sets the Access-Control-Max-Age header.
-    maxAge: false
-    # Sets the Access-Control-Allow-Credentials header.
-    supportsCredentials: true
+    allowedOrigins: ['http://localhost:5173', 'https://my-first-drupal11-app.lndo.site']
+    exposedHeaders: ['Content-Length', 'X-Drupal-Cache', 'X-Drupal-Cache-Tags']
+    maxAge: 1000
+    supportsCredentials: false
+
 
   queue.config:
     # The maximum number of seconds to wait if a queue is temporarily suspended.
